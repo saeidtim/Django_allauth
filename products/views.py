@@ -20,7 +20,6 @@ class ProductDetailView(generic.DetailView, generic.FormView):
     template_name = 'products/product_detail.html'
     form_class = PorductFormComment
 
-    def re
     def get_context_data(self, **kwargs):
         context = super(ProductDetailView, self).get_context_data()
         context['CommentForm'] = PorductFormComment
